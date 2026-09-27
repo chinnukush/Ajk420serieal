@@ -23,7 +23,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'dreamxbotz_search')   # Session name for the bot
 API_ID = int(environ.get('API_ID', '25380424')) # API ID from my.telegram.org
 API_HASH = environ.get('API_HASH', '2c434b1c9d15acef0b9ef44b6b96f6c0')  # API Hash from my.telegram.org
-BOT_TOKEN = environ.get('BOT_TOKEN', "7969000478:AAGjcI6v1jHx8iJZCbrEWwhs3BjZvkH2qSk")    # Bot token from @BotFather
+BOT_TOKEN = environ.get('BOT_TOKEN', "8950289897:AAGQhIyclJclfCrTfwI73qh1m0dCtJLmeDs")    # Bot token from @BotFather
 
 # ============================
 # Bot Settings Configuration
@@ -36,7 +36,7 @@ COVERX = is_enabled(environ.get('COVERX', "False"), True) # Use cover image for 
 # If you disable it then bot will use a default thumb for all files
 
 PICS_URL = (environ.get('PICS', 'https://api.aniwallpaper.workers.dev/random?type=girl')).split() #random anime girl img each time from aniwallpaper (Experimental)
-PICS = (environ.get('PICS', 'https://i.ibb.co/dsVtqQHG/d0c1d2b656d5.jpg')).split()  # Sample pic
+PICS = (environ.get('PICS', 'https://files.catbox.moe/gvjqoc.jpg')).split()  # Sample pic
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_PHOTO = environ.get("MELCOW_PHOTO", "https://graph.org/file/56b5deb73f3b132e2bb73.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df52667c.jpg")
@@ -53,13 +53,13 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1004409978272'))  # Log channel i
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1004409978272'))  # Bin channel id (make sure bot is admin)
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1004409978272'))  # Premium logs channel id
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002119063158').split()] #(make sure bot is admin)
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001629003283')  # Support group id (make sure bot is admin)
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1004302250505')  # Support group id (make sure bot is admin)
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1004409978272')  # Request channel id (make sure bot is admin)
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/TG_SUPPORT_GROUP')  # Support group link (make sure bot is admin)
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/AJKBOY_MHDZubair_Official')  # Support group link (make sure bot is admin)
 
 # FORCE_SUB 
-auth_req_channels = environ.get("AUTH_REQ_CHANNELS", "-1001999917591")# requst to join Channel for force sub (make sure bot is admin) only for bot ADMINS  
-auth_channels     = environ.get("AUTH_CHANNELS", "-1001999917591")# Channels for force sub (make sure bot is admin)
+auth_req_channels = environ.get("AUTH_REQ_CHANNELS", "")# requst to join Channel for force sub (make sure bot is admin) only for bot ADMINS  
+auth_channels     = environ.get("AUTH_CHANNELS", "-1004302250505")# Channels for force sub (make sure bot is admin)
 
 # ============================
 # Payment Configuration
