@@ -36,7 +36,7 @@ COVERX = is_enabled(environ.get('COVERX', "False"), True) # Use cover image for 
 # If you disable it then bot will use a default thumb for all files
 
 PICS_URL = (environ.get('PICS', 'https://api.aniwallpaper.workers.dev/random?type=girl')).split() #random anime girl img each time from aniwallpaper (Experimental)
-PICS = (environ.get('PICS', 'https://files.catbox.moe/gvjqoc.jpg')).split()  # Sample pic
+PICS = (environ.get('PICS', 'https://files.catbox.moe/3i0jal.jpg https://files.catbox.moe/q1rcep.jpg https://files.catbox.moe/mx2zps.jpg https://files.catbox.moe/3xve18.jpg https://files.catbox.moe/t58ncq.jpg https://files.catbox.moe/yvzezk.jpg https://files.catbox.moe/nqhkbg.jpg https://files.catbox.moe/32qbwf.jpg')).split()  # Sample pic
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_PHOTO = environ.get("MELCOW_PHOTO", "https://graph.org/file/56b5deb73f3b132e2bb73.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df52667c.jpg")
