@@ -105,7 +105,7 @@ LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002119063158')) #Verificat
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
 
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/HK_How_To_Open/2")   # Tutorial link for verification
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/HK_How_To_Open/2")   # Second tutorial link for verification
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/Brand_moviess/6")   # Second tutorial link for verification
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/Brand_moviess/6")   # Third tutorial link for verification
 
 # Verification (Must Fill All Veriables. Else You Got Error
