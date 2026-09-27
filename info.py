@@ -49,12 +49,12 @@ FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '634637418 8312242776').split()] # Replace with the actual admin ID(s) to add
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1004219988419').split()]  # Channel id for auto indexing (make sure bot is admin)
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002119063158'))  # Log channel id (make sure bot is admin)
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002119063158'))  # Bin channel id (make sure bot is admin)
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002119063158'))  # Premium logs channel id
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1004409978272'))  # Log channel id (make sure bot is admin)
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1004409978272'))  # Bin channel id (make sure bot is admin)
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1004409978272'))  # Premium logs channel id
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002119063158').split()] #(make sure bot is admin)
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001629003283')  # Support group id (make sure bot is admin)
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002119063158')  # Request channel id (make sure bot is admin)
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1004409978272')  # Request channel id (make sure bot is admin)
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/TG_SUPPORT_GROUP')  # Support group link (make sure bot is admin)
 
 # FORCE_SUB 
@@ -65,7 +65,7 @@ auth_channels     = environ.get("AUTH_CHANNELS", "-1001999917591")# Channels for
 # Payment Configuration
 # ============================
 QR_CODE = environ.get('QR_CODE', 'https://i.ibb.co/21ZPjBNw/071d44198b51.jpg')    # QR code image for payments
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'kushalhari@slc')    # Owner UPI ID for payments
+OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'Not Available')    # Owner UPI ID for payments
 
 STAR_PREMIUM_PLANS = {
     10: "7day",
@@ -78,8 +78,8 @@ STAR_PREMIUM_PLANS = {
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://kyt43843_db_user:3vQMfank4VkEBXWf@cluster0.rjzxloa.mongodb.net/?appName=Cluster0")  # MongoDB URI for the database
-DATABASE_NAME = environ.get('DATABASE_NAME', "maheshbot99") # Database name (default: cluster)
+DATABASE_URI = environ.get('DATABASE_URI', "")  # MongoDB URI for the database
+DATABASE_NAME = environ.get('DATABASE_NAME', "harikushal") # Database name (default: cluster)
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files') # Collection name (default: dreamcinezone_files)
 
 # If MULTIPLE_DB Is True Then Fill DATABASE_URI2 Value Else You Will Get Error.
@@ -88,37 +88,37 @@ DATABASE_URI2 = environ.get('DATABASE_URI2', "")  # MongoDB URI for the second d
 # ============================
 # Movie Notification & Update Settings
 # ============================
-MOVIE_UPDATE_NOTIFICATION = is_enabled(environ.get('MOVIE_UPDATE_NOTIFICATION', "True"), False)  # Notification On (True) / Off (False)
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002170171844'))  # Notification of sent to your channel
+MOVIE_UPDATE_NOTIFICATION = is_enabled(environ.get('MOVIE_UPDATE_NOTIFICATION', "False"), False)  # Notification On (True) / Off (False)
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', ''))  # Notification of sent to your channel
 DREAMXBOTZ_IMAGE_FETCH = is_enabled(environ.get('DREAMXBOTZ_IMAGE_FETCH', "True"), True)  # On (True) / Off (False)
 LINK_PREVIEW = is_enabled(environ.get('LINK_PREVIEW', "False"), False) # Shows link preview in notification msg instead of image
 ABOVE_PREVIEW = is_enabled(environ.get('ABOVE_PREVIEW', "True"), True) # Shows link preview above the text in notification msg if True else below the msg
 TMDB_API_KEY = environ.get('TMDB_API_KEY', 'cc852a292bf192a833fd6cc5472e177b') # preffer to use your own tmdb API Key get it from https://www.themoviedb.org/settings/api
-TMDB_POSTER = is_enabled(environ.get('TMDB_POSTER', "True"), True) # Shows TMDB poster in notification msg
+TMDB_POSTER = is_enabled(environ.get('TMDB_POSTER', "False"), True) # Shows TMDB poster in notification msg
 LANDSCAPE_POSTER = is_enabled(environ.get('LANDSCAPE_POSTER', "True"), True) # Shows landscape poster in notification msg
 
 # ============================
 # Verification Settings
 # ============================
-IS_VERIFY = is_enabled(environ.get('IS_VERIFY', 'True'), False)  # Verification On (True) / Off (False)
+IS_VERIFY = is_enabled(environ.get('IS_VERIFY', 'False'), False)  # Verification On (True) / Off (False)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002119063158')) #Verification Channel Id 
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
 
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/HK_How_To_Open/2")   # Tutorial link for verification
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/Brand_moviess/6")   # Second tutorial link for verification
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/Brand_moviess/6")   # Third tutorial link for verification
+TUTORIAL = environ.get("TUTORIAL", "")   # Tutorial link for verification
+TUTORIAL_2 = environ.get("TUTORIAL_2", "")   # Second tutorial link for verification
+TUTORIAL_3 = environ.get("TUTORIAL_3", "")   # Third tutorial link for verification
 
 # Verification (Must Fill All Veriables. Else You Got Error
-SHORTENER_API = environ.get("SHORTENER_API", "7ec0f6c62f20266998ba5a7ae16a1e1095cad590") # Shortener API key
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "linkshortify.com") # Shortener website
+SHORTENER_API = environ.get("SHORTENER_API", "") # Shortener API key
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "") # Shortener website
 
-SHORTENER_API2 = environ.get("SHORTENER_API2", "45b6928d65d1c1dfc2d52d052d879b9b02dd7fe3")  # Shortener API key for second website
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "arolinks.com") # Shortener website for second website
+SHORTENER_API2 = environ.get("SHORTENER_API2", "")  # Shortener API key for second website
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "") # Shortener website for second website
 
-SHORTENER_API3 = environ.get("SHORTENER_API3", "45b6928d65d1c1dfc2d52d052d879b9b02dd7fe3")  
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "arolinks.com") # Shortener website for third website
+SHORTENER_API3 = environ.get("SHORTENER_API3", "")  
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "") # Shortener website for third website
 
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "360")) # Time gap for two-step verification in seconds (default: 20 minutes)
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "3600")) # Time gap for two-step verification in seconds (default: 20 minutes)
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "1220"))    
 
 # ============================
