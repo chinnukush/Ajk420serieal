@@ -1174,8 +1174,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help'),
                     InlineKeyboardButton(' ᴀʙᴏᴜᴛ 📖', callback_data='about')
                 ],[
-                    InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
-                     InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎟', callback_data="premium_info"),
+             #       InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
+                     InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=UPDATE_CHNL_LNK),
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -1344,7 +1344,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "buy_info":
         try:
             btn = [[
-                InlineKeyboardButton('ꜱᴛᴀʀ', callback_data='star_info'),
+           #     InlineKeyboardButton('ꜱᴛᴀʀ', callback_data='star_info'),
                 InlineKeyboardButton('ᴜᴘɪ', callback_data='upi_info')
             ],[
                 InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ⇋', callback_data='premium_info')
