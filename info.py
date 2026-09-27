@@ -32,7 +32,7 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))    # Cache time in seconds (def
 USE_CAPTION_FILTER = is_enabled(environ.get('USE_CAPTION_FILTER', "True"), True)  # Use caption filter for search results (default: True)
 INDEX_CAPTION = is_enabled(environ.get('SAVE_CAPTION', "True"), True) # Save caption db when idexing make it False if you dont use USE_CAPTION_FILTER for search results (default: True)
 #Making it false will not save caption in db SO you can save some storage space
-COVERX = is_enabled(environ.get('COVERX', "True"), True) # Use cover image for indexed files (default: True)
+COVERX = is_enabled(environ.get('COVERX', "False"), True) # Use cover image for indexed files (default: True)
 # If you disable it then bot will use a default thumb for all files
 
 PICS_URL = (environ.get('PICS', 'https://api.aniwallpaper.workers.dev/random?type=girl')).split() #random anime girl img each time from aniwallpaper (Experimental)
@@ -124,9 +124,9 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "1220"))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/iPopcornMoviesGroups') # Group link for the bot
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Harikushal') # Owner link for the bot
-UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/+9YIHvEuJONc5MDBl') # Update channel link for the bot
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/AJKBOY_MHDZubair_Official') # Group link for the bot
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/AJK_BOY1_OFFICIAL') # Owner link for the bot
+UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/AJKBOY_MHDZubair_Official') # Update channel link for the bot
 
 # ============================
 # User Configuration
@@ -152,8 +152,8 @@ INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))  # Index 
 NO_RESULTS_MSG = is_enabled(environ.get("NO_RESULTS_MSG", "True"), True)  # True if you want no results messages in Log Channel
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)    # Max Button On (True) / Off (False)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)    # P_TTI_SHOW_OFF On (True) / Off (False)
-IMDB = is_enabled((environ.get('IMDB', "True")), False)    # IMDB Results On (True) / Off (False)
-TMDB_ON_SEARCH = is_enabled((environ.get('TMDB_ON_SEARCH', "Truee")), False)    # Use TMDB Poster On Search Results
+IMDB = is_enabled((environ.get('IMDB', "False")), False)    # IMDB Results On (True) / Off (False)
+TMDB_ON_SEARCH = is_enabled((environ.get('TMDB_ON_SEARCH', "False")), False)    # Use TMDB Poster On Search Results
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True) # Auto Filter On (True) / Off (False)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True) # Auto Delete On (True) / Off (False)
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False) # Long IMDB Description On (True) / Off (False)
