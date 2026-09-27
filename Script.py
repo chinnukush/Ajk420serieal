@@ -256,7 +256,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b><a href="https://t.me/Hari_Moviez">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href="https://t.me/+9YIHvEuJONc5MDBl">[ ʜᴀʀɪᴍᴏᴠɪᴇᴢ ]</a></b>"""
+    CAPTION = """<b>{file_name}</b>"""
 
     
     MOVIE_UPDATE_NOTIFY_TXT = """
